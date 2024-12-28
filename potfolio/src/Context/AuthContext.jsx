@@ -1,11 +1,11 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
 
-const AuthContext = () => {
+const AuthContext = ({children}) => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <div>{children}</div>
+    </>
   )
 }
 

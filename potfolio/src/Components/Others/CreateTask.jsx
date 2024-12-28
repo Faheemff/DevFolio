@@ -6,7 +6,7 @@ import React from 'react'
 const CreateTask = () => {
     return (
         <>
-            <div className=' bg-[#1C1C1C] p-5'>
+            <div className='bg-[#1C1C1C] p-5 mt-10'>
                 <form className='w-full flex flex-wrap items-start justify-between'>
                     <div className='w-1/2'>
                         <div>
