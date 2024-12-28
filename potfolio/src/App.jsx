@@ -1,13 +1,15 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
-import Login from './Components/Auth/Login'
+// import Login from './Components/Auth/Login'
+import EmplyeeDashboard from './Components/Dashboard/EmployeeDashboard'
 
 const App = () => {
 
   return (
     <>
      <div>
-      <Login />
+      <EmplyeeDashboard />
+      {/* <Login /> */}
      </div>
     </>
   )
