@@ -1,15 +1,20 @@
-// eslint-disable-next-line no-unused-vars
-import React from 'react'
+import { useEffect } from 'react'
 import AdminDashboard from './Components/Dashboard/AdminDashboard'
-// import Login from './Components/Auth/Login'
-// import EmplyeeDashboard from './Components/Dashboard/EmployeeDashboard'
+import { setLocalStorage } from './Utils/LocalStorage'
+import Login from './Components/Auth/Login'
+import EmplyeeDashboard from './Components/Dashboard/EmployeeDashboard'
 
 const App = () => {
+
+  useEffect(() => {
+    setLocalStorage()
+  })
+  
 
   return (
     <>
      <div>
-      {/* <EmplyeeDashboard /> */}
+      <EmplyeeDashboard />
       {/* <Login /> */}
       <AdminDashboard />
      </div>
