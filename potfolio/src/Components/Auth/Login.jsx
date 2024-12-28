@@ -1,10 +1,11 @@
 import { useState } from 'react'
 
-const Login = () => {
+const Login = ({handleLogin}) => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const submitHandler = (e) => {
     e.preventDefault();
+    handleLogin(email, password);
     console.log("email is", email);
     console.log("password is", password);
     setEmail('');
@@ -33,7 +34,7 @@ const Login = () => {
               }}
               required
               className='border-2 border-emerald-600 rounded-full px-6 py-3 text-xl mt-4 text-white bg-transparent placeholder:text-gray-400' type="password" placeholder='Enter your password' />
-            <button className='border-2 border-emerald-600 rounded-full px-7 py-2 mt-4 text-xl text-white bg-emerald-600 placeholder:text-white'>Login</button>
+            <button className='border-2 border-emerald-600 w-full rounded-full px-7 py-2 mt-4 text-xl text-white bg-emerald-600 placeholder:text-white'>Login</button>
           </form>
         </div>
       </div>
