@@ -17,6 +17,7 @@ body {
 
 body {
   background-color: black;
+  color: white;
 }
 
 #tasklist::-webkit-scrollbar {
